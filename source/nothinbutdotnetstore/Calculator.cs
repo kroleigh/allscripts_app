@@ -22,7 +22,14 @@ namespace nothinbutdotnetstore
         {
             ensure_all_are_positive(first, second);
 
-            connection.Open();
+            using (connection)
+            {
+              connection.Open();
+              using (IDbCommand cmd = connection.CreateCommand())
+              {
+                cmd.ExecuteNonQuery();
+              }
+            }
 
             return first + second;
         }
