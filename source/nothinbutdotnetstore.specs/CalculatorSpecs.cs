@@ -29,7 +29,7 @@ namespace nothinbutdotnetstore.specs
                 spec.catch_exception(() => sut.add(-2, 3));
 
             It should_throw_an_argument_exception = () =>
-                spec.exception_thrown.ShouldBeAn<ArgumentException>();
+                spec.exception_thrown.ShouldBeAn<ArgumentOutOfRangeException>();
 
         }
     }
