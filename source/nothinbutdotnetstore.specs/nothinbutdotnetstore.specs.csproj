@@ -122,6 +122,7 @@
     <Compile Include="RawHttpHandlerSpecs.cs" />
     <Compile Include="RequestHandlingCommandSpecs.cs" />
     <Compile Include="utility\ObjectFactory.cs" />
+    <Compile Include="ViewProductsInADepartmentSpecs.cs" />
     <Compile Include="ViewTheDepartmentsInADepartmentSpecs.cs" />
     <Compile Include="ViewTheMainDepartmentsInTheStoreSpecs.cs" />
   </ItemGroup>
